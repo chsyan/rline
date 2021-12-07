@@ -8,7 +8,7 @@ fn main() {
     });
 
     if let Err(err) = rline::run(config) {
-        eprintln!("Runtime error: {}", err);
+        eprintln!("Error: {}", err);
         process::exit(1);
     }
 }
